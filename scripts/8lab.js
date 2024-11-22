@@ -51,7 +51,7 @@ const closeModal = () => {
   modalContent.classList.add('hidden'); 
   setTimeout(()=>{modal.remove()}, 1000);
   userName.textContent = inputName.value;
-  if(!inputName.value){
+  if(!inputName.value || text.trim() === ""){
     userName.textContent = "Федько"
   }
 }
