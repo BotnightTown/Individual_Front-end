@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8lab</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/8lab.css">
+  <link rel="icon" href="media/pngtree-book-icon-vector-image-png-image_6552370.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-orange">
+      <a class="navbar-brand logo" href="index.html">LabBar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item mr-3 ml-3">
+            <a class="nav-link" href="7lab.html">7lab</a>
+          </li>
+          <li class="nav-item mr-3 ml-3">
+            <a class="nav-link" href="8lab.html">8lab</a>
+          </li>
+          <li class="nav-item mr-3 ml-3">
+            <a class="navbar-brand" href="index.html">LabBar</a>
+          </li>
+          <li class="nav-item mr-3 ml-3">
+            <a class="nav-link" href="9lab.html">9lab</a>
+          </li>
+          <li class="nav-item mr-3 ml-3">
+            <a class="nav-link" href="10lab.html">10lab</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+<main>
+  <section>
+    <article>
+      <div id="user">
+        <p id="userName" class="name">
+          
+        </p>
+        <input type="text" id="userScore" value="0" disabled>
+        <div id="userNum" class="result"></div>
+      </div>
+      <button type="button" id="generateBtn">
+        Почати гру
+      </button>
+      <div id="computer">
+        <p id="computerName" class="name">
+          Комп'ютер
+        </p>
+        <input type="text" id="computerScore" value="0" disabled>
+        <div id="computerNum" class="result"></div>
+      </div>
+    </article>
+    <div id="result"></div>
+  </section>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-content" id="modal-content">
+      <h3>Уведіть ваше ім'я.</h3>
+      <p>Воно буде використовуватися у грі</p>
+      <input type="text" id="inputName" size="15" maxlength="15"><br>
+      <button id="closeButton">Прийняти</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="scripts/8lab.js"></script>
+</body>
+</html>
